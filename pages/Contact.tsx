@@ -202,8 +202,8 @@ const Contact: React.FC = () => {
                     <option value="finance">Financial Services</option>
                     <option value="enterprise">Large Enterprise</option>
                     <option value="edu">Higher Education</option>
-                    <option value="edu">Healtcare</option>
-                    <option value="edu">Small or Mid Enterprise</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="mid-enterprise">Small or Mid Enterprise</option>
                     <option value="other">Others</option>
                   </select>
                 </div>
@@ -226,7 +226,7 @@ const Contact: React.FC = () => {
                 <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest">Assets & Architecture (Images/PDF)</label>
                 <div 
                   onClick={() => fileInputRef.current?.click()}
-                  className="border-2 border-dashed border-white/10 bg-black hover:border-[#00adef]/40 transition-all p-10 text-center cursor-pointer group"
+                  className="border-2 border-dashed border-white/10 bg-black hover:border-[#00adef]/40 transition-all p-10 text-center cursor-pointer group rounded-sm"
                 >
                   <input 
                     type="file" 
@@ -271,7 +271,7 @@ const Contact: React.FC = () => {
                   <>ENCRYPTING DATA...</>
                 ) : (
                   <>
-                    SUBMIT <Send size={18} />
+                    SUBMIT AUDIT REQUEST <Send size={18} />
                   </>
                 )}
               </button>
