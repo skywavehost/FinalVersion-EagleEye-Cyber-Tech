@@ -12,7 +12,7 @@ export const SERVICES_DATA: Service[] = [
     description: 'Expert strategic guidance to align security programs with business goals.',
     icon: 'Shield',
     outcomes: ['Strategic Roadmap', 'Risk Posture Report', 'Executive Alignment'],
-    compliance: ['ISO 27001', 'NIST CSF']
+    compliance: ['ISO 27001', 'NIST CSF', 'RMF', 'CIS', 'NIST SP 800-37', 'NIST SP 800-53'],
   },
   {
     id: 'network-security',
@@ -50,7 +50,19 @@ export const SERVICES_DATA: Service[] = [
     title: 'Zero Trust Architecture (ZTA)',
     description: 'Moving from perimeter-based security to identity-driven micro-segmentation.',
     icon: 'Cpu',
-    outcomes: ['Least Privilege Access', 'Dynamic Policy Control', 'Identity Verification'],
+    outcomes: [
+      'Least Privilege Access', 
+      'Dynamic Policy Control', 
+      'Identity Verification',
+      'Identity & Access Management',
+      'Strong Authentication, e.g., MFA',
+      'Monitoring of Device Health, e.g., Endpoint Detection & Response (EDR)',
+      'Policy Enforcement Point (PEP)',
+      'Continuous Monitoring',
+      'Network Segmentation',
+      'Identification, Authentication, Authorization, & Accountability (IAAA)',
+      'Role-Based Access Control (RBAC)'
+    ],
   }
 ];
 
