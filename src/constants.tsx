@@ -11,7 +11,7 @@ export const SERVICES_DATA: Service[] = [
     description: 'Expert strategic guidance to align security programs with business goals.',
     icon: 'Shield',
     outcomes: ['Strategic Roadmap', 'Risk Posture Report', 'Executive Alignment'],
-    compliance: ['ISO 27001', 'NIST CSF']
+    compliance: ['ISO 27001', 'NIST CSF', 'RMF', 'CIS', 'NIST SP 800-37', 'NIST SP 800-53']
   },
   {
     id: 'network-security',
