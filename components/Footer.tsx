@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <img src={LOGO_URL} alt="EagleEye Logo" className="h-10 w-auto" />
+              <img src={LOGO_URL} alt="EagleEye Logo" className="h-12 w-auto" />
               <div className="flex flex-col leading-tight">
                 <span className="text-xl font-bold text-white tracking-tighter">EagleEye</span>
                 <span className="text-[9px] font-black tracking-[0.15em] text-[#00adef] uppercase">
@@ -69,7 +69,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <div className="flex items-start gap-4">
                 <MapPin className="text-[#00adef] mt-1 shrink-0" size={20} />
                 <span className="text-gray-400 text-sm leading-relaxed">
-                  7375 Executive Place, Suite 400, #1050, Lanham, MD 20706
+                  7375 Executive Place, Suite 400<br />
+                  Lanham, MD 20706
                 </span>
               </div>
               <div className="flex items-center gap-4">
@@ -90,7 +91,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-white/5 gap-6">
           <p className="text-gray-600 text-xs font-medium">
-            © 2026 EagleEye Cyber Technologies. All Rights Reserved.
+            © 2026 EagleEye Cyber Technologies, LLC. All Rights Reserved.
           </p>
           <div className="flex gap-6 text-gray-600 text-xs uppercase font-semibold">
             <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>

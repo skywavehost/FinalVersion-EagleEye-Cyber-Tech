@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
           className="flex items-center gap-3 cursor-pointer group"
           onClick={() => handleLinkClick('home')}
         >
-          <img src={LOGO_URL} alt="EagleEye Logo" className="h-10 w-auto" />
+          <img src={LOGO_URL} alt="EagleEye Logo" className="h-12 w-auto" />
           <div className="flex flex-col leading-tight">
             <span className="text-xl font-extrabold tracking-tighter text-white group-hover:text-[#00adef] transition-colors">
               EagleEye
