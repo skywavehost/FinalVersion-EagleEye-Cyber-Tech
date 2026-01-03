@@ -25,7 +25,7 @@ const Home: React.FC<{ onNavigate: (page: string) => void }> = ({ onNavigate }) 
         {/* Scanning Animation Layer */}
         <ScannerAnimation />
         
-        <div className="relative z-10 max-w-5xl mx-auto text-center pt-20 flex-grow flex flex-col justify-center">
+        <div className="relative z-10 max-w-5xl mx-auto text-center pt-40 flex-grow flex flex-col justify-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#00adef]/10 border border-[#00adef]/20 text-[#00adef] text-xs font-bold uppercase tracking-widest mb-8 animate-pulse shadow-[0_0_15px_rgba(0,173,239,0.2)] mx-auto">
              <div className="w-1.5 h-1.5 rounded-full bg-[#00adef] animate-ping"></div>
              Mission-Critical Resilience
@@ -105,7 +105,7 @@ const Home: React.FC<{ onNavigate: (page: string) => void }> = ({ onNavigate }) 
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden rounded-sm">
+            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Shield size={80} />
               </div>
@@ -126,7 +126,7 @@ const Home: React.FC<{ onNavigate: (page: string) => void }> = ({ onNavigate }) 
               </button>
             </div>
 
-            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden rounded-sm">
+            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Network size={80} />
               </div>
@@ -147,7 +147,7 @@ const Home: React.FC<{ onNavigate: (page: string) => void }> = ({ onNavigate }) 
               </button>
             </div>
 
-            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden rounded-sm">
+            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden">
               <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Cloud size={80} />
               </div>
