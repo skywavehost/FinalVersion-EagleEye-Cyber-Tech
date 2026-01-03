@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { SERVICES_DATA } from '../constants';
-import { Shield, Globe, Lock, Cpu, Database, Activity, CheckCircle2, ChevronRight, LayoutPanelTop, Terminal } from 'lucide-react';
+import { Shield, Globe, Lock, Cpu, Database, Activity, CheckCircle2, ChevronRight } from 'lucide-react';
 
 const iconMap: any = { Shield, Globe, Lock, Cpu, Database, Activity };
 
@@ -14,7 +15,6 @@ const ServiceSectionLabel: React.FC<{ icon: any; label: string }> = ({ icon: Ico
 );
 
 const Services: React.FC = () => {
-  // Mapping categories for the labels in the new design
   const getCategory = (id: string) => {
     switch (id) {
       case 'consulting': return 'ADVISORY';
@@ -42,7 +42,6 @@ const Services: React.FC = () => {
   return (
     <div className="pt-32 pb-40 px-6 min-h-screen bg-[#050505]">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
         <div className="mb-32">
           <p className="text-[#00adef] font-black text-xs uppercase tracking-[0.3em] mb-6">CAPABILITIES</p>
           <h1 className="text-6xl md:text-7xl font-black text-white leading-none tracking-tighter mb-10">
@@ -55,7 +54,6 @@ const Services: React.FC = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="space-y-48">
           {SERVICES_DATA.map((service, index) => {
             const Icon = (iconMap[service.icon] as any) || Shield;
@@ -68,7 +66,6 @@ const Services: React.FC = () => {
                 key={service.id}
                 className={`flex flex-col lg:flex-row items-center gap-16 lg:gap-24 ${!isEven ? 'lg:flex-row-reverse' : ''}`}
               >
-                {/* Content Side */}
                 <div className="flex-1 space-y-10">
                   <div>
                     <ServiceSectionLabel icon={Icon} label={category} />
@@ -82,7 +79,6 @@ const Services: React.FC = () => {
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-                    {/* Technical Focus Column */}
                     <div>
                       <h4 className="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
                         TECHNICAL FOCUS
@@ -95,33 +91,18 @@ const Services: React.FC = () => {
                             {outcome}
                           </li>
                         ))}
-                        {service.compliance && service.compliance.length > 0 && (
-                          <li className="flex items-start gap-3 text-gray-500 text-sm font-medium">
-                            <ChevronRight size={14} className="text-[#00adef] mt-1 flex-shrink-0" />
-                            Security Framework Alignment: {service.compliance.join(', ')}
-                          </li>
-                        )}
                       </ul>
                     </div>
                     
-                    {/* Business Outcomes Column */}
                     <div>
                       <h4 className="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
-                        BUSINESS OUTCOMES
+                        OUTCOMES
                         <div className="flex-grow h-px bg-white/10"></div>
                       </h4>
                       <ul className="space-y-4">
                         <li className="flex items-start gap-3 text-gray-500 text-sm font-medium">
                           <CheckCircle2 size={16} className="text-[#00adef] mt-0.5 flex-shrink-0" />
                           Reduced attack surface
-                        </li>
-                        <li className="flex items-start gap-3 text-gray-500 text-sm font-medium">
-                          <CheckCircle2 size={16} className="text-[#00adef] mt-0.5 flex-shrink-0" />
-                          Real-time threat blocking
-                        </li>
-                        <li className="flex items-start gap-3 text-gray-500 text-sm font-medium">
-                          <CheckCircle2 size={16} className="text-[#00adef] mt-0.5 flex-shrink-0" />
-                          Executive risk transparency
                         </li>
                         <li className="flex items-start gap-3 text-gray-500 text-sm font-medium">
                           <CheckCircle2 size={16} className="text-[#00adef] mt-0.5 flex-shrink-0" />
@@ -132,15 +113,13 @@ const Services: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Image Side */}
                 <div className="flex-1 w-full lg:w-1/2">
                   <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-white/5 shadow-2xl">
                     <img 
                       src={image} 
                       alt={service.title} 
-                      className="w-full h-full object-cover opacity-60 hover:scale-105 transition-transform duration-1000 grayscale hover:grayscale-0"
+                      className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-40"></div>
                   </div>
                 </div>
               </div>

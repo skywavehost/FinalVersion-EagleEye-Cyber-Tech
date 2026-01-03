@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ScannerAnimation from '../components/ScannerAnimation';
 import { ChevronRight, Lock, Cpu, Activity, ShieldCheck, ArrowRight, Zap, Network, Cloud, Shield } from 'lucide-react';
@@ -104,7 +105,7 @@ const Home: React.FC<{ onNavigate: (page: string) => void }> = ({ onNavigate }) 
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden">
+            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden rounded-sm">
               <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Shield size={80} />
               </div>
@@ -125,7 +126,7 @@ const Home: React.FC<{ onNavigate: (page: string) => void }> = ({ onNavigate }) 
               </button>
             </div>
 
-            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden">
+            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden rounded-sm">
               <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Network size={80} />
               </div>
@@ -146,7 +147,7 @@ const Home: React.FC<{ onNavigate: (page: string) => void }> = ({ onNavigate }) 
               </button>
             </div>
 
-            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden">
+            <div className="p-10 bg-[#0a0a0b] border border-white/5 hover:border-[#00adef]/40 transition-all duration-500 group relative overflow-hidden rounded-sm">
               <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Cloud size={80} />
               </div>
